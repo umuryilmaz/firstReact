@@ -9,6 +9,10 @@
   "author": "Umur YILMAZ",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mangodb": "^1.0.0",
+    "mongodb": "^3.0.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
