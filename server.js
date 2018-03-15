@@ -10,11 +10,22 @@ import express from 'express';
 // define server object
 const server = express();
 
+// ==== TEMPLATE ====
+/* Configure template as ejs > Embedded Javascript
+  by default express will go to views folder for these temlpates.
+  to return them we use res.render
+*/
+
+server.set('view engine', 'ejs');
+// ==== TEMPLATE ====
 
 // ==== ROUTES ====
 // Configure routes
 server.get('/', (req,res)=>{
-  res.send('Hello World');
+  //res.send('Hello World');
+  res.render('index', {
+    content:'Passing argument from server.js | Server.get method to View template'
+  });
 });
 // ==== ROUTES ====
 
