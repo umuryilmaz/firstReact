@@ -7,6 +7,6 @@ import ReactDom from 'react-dom';
   3- children: text inside
 */
 ReactDom.render(
-  React.createElement('h2', null, 'This is React Baby' ),
+  <h2>Hello React with JSX </h2>, 
   document.getElementById('root')
 );
