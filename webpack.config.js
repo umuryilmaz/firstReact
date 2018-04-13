@@ -1,14 +1,19 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/public',
+    path: __dirname + '/pub',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {compact: false}
       }
     ]
   }
